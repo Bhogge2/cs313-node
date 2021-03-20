@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+
+<body>
+
+  <%- include ("../partials/nav.ejs") %>
+  <div class="container">
+    <h1>
+      Calcuate Your Rate
+    </h1>
+    <form method="GET" action='/results'>
+      <input class="form-control" style="max-width:280px; margin-bottom:20px;" type="number" placeholder='Weight (ounces)' step="0.01" min="1" name='Weight'>
+      <select style="max-width:280px; margin-bottom:20px;" class="form-control"  name='type'>
+        <option value='Stamped'>Stamped Letter</option>
+        <option value='Metered'>Metered Letter</option>
+        <option value='Flats'>Large Envelope (Flats)</option>
+        <option value='FirstClass'>First-Class Package Service—Retail</option>
+      </select>
+      <input type=submit class="btn-primary" value="Get Rate">
+    </form>
+  </div>
+
+</body>
+
+</html>

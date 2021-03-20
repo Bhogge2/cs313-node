@@ -1,0 +1,19 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <%- include ("../partials/header.ejs") %>
+  </head>
+
+  <body>
+    <%- include ("../partials/nav.ejs") %>
+      <div class="container">
+          <h1 id="title">Postal Rate Calculator</h1>
+          <% if (typeof rate !== 'undefined') { %>
+          <h2>Total Rate: $<%- rate %></h2>
+          <% } %>
+          <a class="btn btn-primary" href="/">Check Another Rate</a>
+      </div>
+  </body>
+
+  </html>
